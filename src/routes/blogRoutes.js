@@ -4,7 +4,6 @@ import { createBlogPost, getBlogPosts, updateBlogPost, deleteBlogPost } from '..
 
 const router = express.Router();
 
-// Ensure routes interact with the 'posts' collection
 router.post('/posts', createBlogPost);
 router.get('/posts', getBlogPosts);
 router.put('/posts/:id', updateBlogPost);
